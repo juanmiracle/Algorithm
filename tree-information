@@ -1,0 +1,5 @@
+tree:     
+   if (p == null || q == null) {
+            return p == q;  // if q or p is null then return false, if both are null, then true
+        }
+        
