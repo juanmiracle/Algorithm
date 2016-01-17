@@ -49,7 +49,7 @@ public class CombinationSumIII {
             return;
         }
 
-        for (int i = start; i <= 9; i++) {   // be careful with the start point !!! 
+        for (int i = start; i <= 9; i++) {   // be careful with the start point !!!
             list.add(i);
             comHelper(k - 1, sum - i, i + 1, result, list);
             list.remove(list.size() - 1);

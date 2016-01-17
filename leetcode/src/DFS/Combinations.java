@@ -47,12 +47,12 @@ public class Combinations {
     }
 
     public static void combineHelper(int endNum, int current, int comNum, List<List<Integer>> result, List<Integer> list) {
-        if (comNum == 0) {                // if all comNum had been conbined, then stop add more elememnt
+        if (comNum == 0) {                // if all comNum had been combined, then stop add more element
             result.add(new ArrayList<Integer>(list));   // add list into result;
             return;     // void type, return null
         }
 
-        // if the list has the number that kess than comNum, add current  element
+        // if the list has the number that less than comNum, add current  element
         list.add(current);   // current range form 1 to n(endNum)
         combineHelper(endNum, current+1, comNum - 1, result, list);
         list.remove(list.size() - 1);   // like DFS
