@@ -59,7 +59,7 @@ public class Combinations {
 
         // if has added comNum  then return
 
-        if (endNum - current + 1 == comNum) {
+        if (endNum - current + 1 == comNum) {  // ???from strat to n ???
             return;
         }
 
